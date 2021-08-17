@@ -15,15 +15,15 @@
                 <div class="card">
                     <div class="form">
                         <p>Modelo do carro</p>
-                        <input type="text" name="carro" class="inputText">
+                        <input type="text" id="modelo" name="carro" class="inputText">
                     </div>
                     <div class="form">
                         <p>Placa</p>
-                        <input type="text" name="placa" class="inputText">
+                        <input type="text" id="placa" name="placa" class="inputText">
                     </div>
                     <div class="buttons">
-                        <button onclick="carro.saveCar()" class="saveBtn">Salvar</button>
-                        <button onclick="carro.deleteCar()" class="delBtn">Deletar</button>
+                        <button onclick="carro.salvar()" class="saveBtn">Salvar</button>
+                        <button onclick="carro.cancelar()" class="delBtn">Cancelar</button>
                     </div>
                 </div>
             </main>
