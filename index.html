@@ -9,20 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <main>
-            <div class="card">
-                <div class="inputText">
-                    <label for="carro">Modelo do carro:</label>
-                    <input type="text" name="carro" placeholder='Modelo'>
-                </div>
-                <div class="inputText">
-                    <label for="placa">Placa:</label>
-                    <input type="text" name="placa" placeholder='Placa'></div>
-            </div>
-        </main>
-
-
+        <h1>Gestão de Carros</h1>
         <div class="content">
+            <main>
+                <div class="card">
+                    <div class="form">
+                        <p>Modelo do carro</p>
+                        <input type="text" name="carro" class="inputText modelo">
+                    </div>
+                    <div class="form">
+                        <p>Placa</p>
+                        <input type="text" name="placa" class="inputText placa">
+                    </div>
+                    <div class="buttons">
+                        <button onclick="carro.salvar()" class="saveBtn">Salvar</button>
+                        <button onclick="carro.cancelar()" class="delBtn">Cancelar</button>
+                    </div>
+                </div>
+            </main>
+            <hr>
             <table>
                 <th>Id</th>
                 <th>Produto</th>
@@ -33,6 +38,9 @@
                 </tbody>
             </table>
         </div>
+        
+        
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
