@@ -15,34 +15,37 @@ class Carro{
 
         console.log(carro);
     }
-    cancelar(){
-         alert('Vamos deletar esse carro!');
-    }
-
+    
     lerDados(){
         let carro = {};
-
+        
         carro.id = this.id;
-        carro.modelo = document.getElementById('modelo').value;
-        carro.placa = document.getElementById('placa').value;
-
+        carro.modelo = document.getElementsByClassName('modelo').value;
+        carro.placa = document.getElementsByClassName('placa').value;
+        
         return carro;
     }
+
     validaCampos(){
         let msg = '';
-
+        
         if(carro.modelo == ''){
             msg += '- Informe o modelo do carro \n';   
-        } if (carro.placa == ''){
+        } 
+        
+        if (carro.placa == ''){
             msg += '- Informe a placa do carro \n';
         } 
-
+        
         if(msg != ''){
             alert(msg);
             return false;
         }
-
+        
         return true
+    }
+    cancelar(){
+         alert('Vamos deletar esse carro!');
     }
 
 }
