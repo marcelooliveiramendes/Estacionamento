@@ -47,9 +47,46 @@ h1{
     text-align: center;
     font-weight: bold;
 }
+.buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+.saveBtn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: rgb(57, 216, 78);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}   
+.delBtn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: rgb(253, 8, 8);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 
 hr{
    width: 80%;
    margin: 20px 0px;
    background-color: #d4d4d4;
 }
+
+table{
+    width: 400px;
+    border-collapse: collapse;
+}
+
+table th{
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
