@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamento Dinâmico</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Gestão de Carros</h1>
+        <h1>Gestão de veiculos</h1>
         <div class="content">
-            <main>
-                <div class="card">
-                    <div class="form">
-                        <p>Modelo do carro</p>
-                        <input type="text" name="carro" class="inputText modelo">
-                    </div>
-                    <div class="form">
-                        <p>Placa</p>
-                        <input type="text" name="placa" class="inputText placa">
-                    </div>
-                    <div class="buttons">
-                        <button onclick="carro.salvar()" class="saveBtn">Salvar</button>
-                        <button onclick="carro.cancelar()" class="delBtn">Cancelar</button>
-                    </div>
+            <form action="" class="forms">
+                <div class="inputField">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" name="modelo" id="modelo">
                 </div>
-            </main>
-            <hr>
-            <table>
-                <th>Id</th>
-                <th>Produto</th>
-                <th>Valor</th>
-                <th>Ações</th>
-                <tbody class="">
-
-                </tbody>
-            </table>
+                <div class="inputField">
+                    <label for="placa">Placa</label>
+                    <input type="text" name="placa" id="placa">
+                </div>
+                <button>Salvar</button>
+            </form>
+            <div>
+                <table>
+                    <thead>
+                        <th>Modelo</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <!-- vai ser adicionado pelo javascript -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-        
-        
     </div>
+    
     <script src="main.js"></script>
 </body>
 </html>
