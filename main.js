@@ -51,6 +51,25 @@ class Carro{
 
         return carro;
     }
+
+    validaCampos(carro){
+        let msg = '';
+
+        if(carro.modelo == ''){
+            msg += '- Informe o modelo do carro! \n'
+        }
+
+        if(carro.placa == ''){
+            msg += '- Informe a placa do carro! \n'
+        }
+
+        if(msg != ''){
+            alert(msg);
+            return false;
+        }
+
+        return true;
+    }
 }
 
 var carro = new Carro();
