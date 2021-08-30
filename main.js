@@ -75,6 +75,18 @@ class Carro{
         document.getElementById('modelo').value = '';
         document.getElementById('placa').value = '';
     }
+
+    concluir(id) {
+        
+        let tbody = document.querySelector('tbody');
+
+        for(let i = 0; i < this.arrayCarros.length; i++) {
+            if(this.arrayCarros[i].id == id) {
+                this.arrayCarros.splice(i, 1); 
+                tbody.deleteRow(i);
+            }
+        }
+    }
 }
 
 var carro = new Carro();
