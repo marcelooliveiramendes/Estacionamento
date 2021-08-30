@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Gestão de veiculos</h1>
         <div class="content">
-            <form action="" class="forms">
+            <div class="forms">
                 <div class="inputField">
                     <label for="modelo">Modelo</label>
                     <input type="text" name="modelo" id="modelo">
@@ -20,9 +20,9 @@
                     <label for="placa">Placa</label>
                     <input type="text" name="placa" id="placa">
                 </div>
-                <button>Salvar</button>
-            </form>
-            <div>
+                <button onclick="carro.salvar()">Salvar</button>
+            </div>
+            <div class="tabela">
                 <table>
                     <thead>
                         <th>Modelo</th>
