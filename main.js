@@ -36,12 +36,21 @@ class Carro{
             console.log(this.arrayCarros);
         }
     }
-    
+
     adicionar(carro){
         this.arrayCarros.push(carro);
         this.id++;
     }
 
+    lerDados(){
+        let carro = {}
+
+        carro.id = this.id;
+        carro.modelo = document.getElementById('modelo').value;
+        carro.placa = document.getElementById('placa').value;
+
+        return carro;
+    }
 }
 
 var carro = new Carro();
