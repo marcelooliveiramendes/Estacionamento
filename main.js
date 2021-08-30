@@ -35,7 +35,11 @@ class Carro{
 
             console.log(this.arrayCarros);
         }
-
+    }
+    
+    adicionar(carro){
+        this.arrayCarros.push(carro);
+        this.id++;
     }
 
 }
