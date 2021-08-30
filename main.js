@@ -70,6 +70,11 @@ class Carro{
 
         return true;
     }
+
+    limpaCampos(){
+        document.getElementById('modelo').value = '';
+        document.getElementById('placa').value = '';
+    }
 }
 
 var carro = new Carro();
