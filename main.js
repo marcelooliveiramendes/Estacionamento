@@ -38,7 +38,16 @@ class Carro{
     }
 
     adicionar(carro){
+        let getLocalStorage = localStorage.getItem('Carros');
+        if(getLocalStorage == null){
+            this.arrayCarros = [];
+        } else {
+            this.arrayCarros = JSON.parse(getLocalStorage);
+        }
+
         this.arrayCarros.push(carro);
+        localStorage.setItem('Carros', JSON.stringify(this.arrayCarros));
+        
         this.id++;
     }
 
