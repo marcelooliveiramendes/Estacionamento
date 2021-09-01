@@ -86,15 +86,16 @@ class Carro{
     }
 
     concluir(id) {
-        
         let tbody = document.querySelector('tbody');
-
         for(let i = 0; i < this.arrayCarros.length; i++) {
             if(this.arrayCarros[i].id == id) {
                 this.arrayCarros.splice(i, 1); 
                 tbody.deleteRow(i);
+                localStorage.setItem('Carros', JSON.stringify(this.arrayCarros));
             }
         }
+
+        this.listarTabela();
     }
 }
 
